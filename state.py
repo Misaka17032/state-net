@@ -44,6 +44,7 @@ class States(nn.Module): #optimizer.param_groups[0]['lr']
 			net["optimizer"].zero_grad()
 			loss.backward()
 			net["optimizer"].step()
+		
 
 	def eval(self, datax, datay, epoches=100):
 		lossfunc = nn.MSELoss()
